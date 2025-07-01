@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            Tuan Ton
+        </div>
+
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">
+            Tuan Ton
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span>
+
+                </span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="landing-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <div class="profile-wrapper">
+                    <img src="./assets/profile-chibi-2.png" alt="Profile Picture" class="profile-pic">
+                    <div class="profile-glow"></div>
+                </div>
+            </div>
+            <div class="section_text">
+                <div class="text-animation">
+                    <p class="section_text_1 fade-in">Hello, I'm</p>
+                    <h1 class="title typing-effect">Tuan Ton</h1>
+                    <p class="section_text_2 slide-up">Computer Science Student</p>
+                    <div class="subtitle-tags">
+                        <span class="tag">Full-Stack Developer</span>
+                        <span class="tag">Problem Solver</span>
+                        <span class="tag">Tech Enthusiast</span>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="button-color-1 pulse-button"
+                        onclick="window.open('./assets/TuanTonThatResume.pdf', '_blank')">
+                        <span>📄</span> Download Resume
+                    </button>
+                    <button class="button-color-2 glow-button" onclick="location.href='#contact'">
+                        <span>💬</span> Let's Talk
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <a href="https://www.linkedin.com/in/tuan-ton-219820250/" target="_blank" rel="noopener"
+                        class="social-link bounce">
+                        <img src="./assets/LinkedIn.png" alt="LinkedIn" class="social-icon">
+                        <span class="social-tooltip">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/tuanton013" target="_blank" rel="noopener" class="social-link bounce">
+                        <img src="./assets/Github.png" alt="GitHub" class="social-icon">
+                        <span class="social-tooltip">GitHub</span>
+                    </a>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="scroll-text">Scroll to explore</div>
+                    <div class="scroll-arrow">↓</div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/down-arrow.png" alt="Arrow icon" class="icon-arrow floating"
+            onclick="location.href='#about'">
+    </section>
+    <section id="about">
+        <h2 class="about-title">About Me</h2>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/profile-chibi-1.png" alt="About Me" class="about-image">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <!--experience-->
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience" class="details-icon">
+                        <h3>Experience</h3>
+                        <p>• 2+ years working as Tech Support</p>
+                    </div>
+                    <!--education-->
+                    <div class="details-container">
+                        <img src="./assets/school.png" alt="Education" class="details-icon">
+                        <h3>Education</h3>
+                        <p class="details-text">• A.A in Computer Science</p>
+                        <p class="details-text">• B.S in Computer Science</p>
+                    </div>
+                </div>
+                <!--text in about-->
+                <div class="about-text">
+                    <p>I am a Computer Science student with a passion for software development and
+                        problem-solving. I enjoy learning new technologies and applying them to real-world projects.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/down-arrow.png" alt="Arrow icon" class="icon-arrow" onclick="location.href='#skills'">
+    </section>
+    <section id="skills">
+        <h2 class="skills-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <img src="./assets/python.png" alt="Python" class="skill-icon">
+                <p>Python</p>
+            </div>
+            <div class="skill-item">
+                <img src="./assets/java.png" alt="Java" class="skill-icon">
+                <p>Java</p>
+            </div>
+            <div class="skill-item">
+                <img src="./assets/c++.png" alt="c++" class="skill-icon">
+                <p>C++</p>
+            </div>
+            <div class="skill-item">
+                <img src="./assets/html.png" alt="HTML" class="skill-icon">
+                <p>HTML</p>
+            </div>
+            <div class="skill-item">
+                <img src="./assets/css.png" alt="css" class="skill-icon">
+                <p>CSS</p>
+            </div>
+            <div class="skill-item">
+                <img src="./assets/js.png" alt="JavaScript" class="skill-icon">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <img src="./assets/git.png" alt="Git and GitHub" class="skill-icon">
+                <p>Git & GitHub</p>
+            </div>
+            <div class="skill-item">
+                <img src="./assets/ps.png" alt="Problem Solving and Critical Thinking" class="skill-icon">
+                <p>Problem Solving & Critical Thinking</p>
+            </div>
+            <div class="skill-item">
+                <img src="./assets/discipline.png" alt="Personal Discipline" class="skill-icon">
+                <p>Personal Discipline</p>
+            </div>
+            <div class="skill-item">
+                <img src="./assets/hardware.png" alt="Hardware Architecture Proficiency" class="skill-icon">
+                <p>Hardware Architecture Proficiency</p>
+            </div>
+        </div>
+        <img src="./assets/down-arrow.png" alt="Arrow icon" class="icon-arrow" onclick="location.href='#projects'">
+    </section>
+    <section id="projects">
+        <h2 class="projects-title">Projects</h2>
+        <div class="section-container">
+            <div class="project-item">
+                <img src="./assets/sudoku.png" alt="Sudoku Solver" class="project-image">
+                <h3>Sudoku Solver</h3>
+                <p>Description of Sudoku Solver.</p>
+                <button class="project-button"
+                    onclick="window.open('https://github.com/tuanton013/Tuan-s-Project/tree/main/Pygame/SodukuSolver')">View
+                    Project</button>
+            </div>
+            <div class="project-item">
+                <img src="./assets/snake.png" alt="Snake Game" class="project-image">
+                <h3>Snake Game</h3>
+                <p>Description of Snake Game.</p>
+                <button class="project-button"
+                    onclick="window.open('https://github.com/tuanton013/Tuan-s-Project/tree/main/Pygame/SnakesEatApple')">View
+                    Project</button>
+            </div>
+            <div class="project-item">
+                <img src="./assets/timer.png" alt="Timer App" class="project-image">
+                <h3>Timer App</h3>
+                <p>Description of Timer App.</p>
+                <button class="project-button"
+                    onclick="window.open('https://github.com/tuanton013/Tuan-s-Project/tree/main/Pygame/Clock%20Timer')">View
+                    Project</button>
+            </div>
+            <div class="project-item">
+                <img src="./assets/flappy.png" alt="Flappy Bird Clone" class="project-image">
+                <h3>Flappy Bird Clone</h3>
+                <p>Description of Flappy Bird Clone.</p>
+                <button class="project-button"
+                    onclick="window.open('https://github.com/tuanton013/Tuan-s-Project/tree/main/Pygame/Flappy%20Bird')">View
+                    Project</button>
+            </div>
+            <div class="project-item">
+                <img src="./assets/hangman.png" alt="Hangman Game" class="project-image">
+                <h3>Hangman Game</h3>
+                <p>Description of Hangman Game.</p>
+                <button class="project-button" onclick="window.open('https://github.com/yourusername/project5')">View
+                    Project</button>
+            </div>
+            <div class="project-item">
+                <img src="./assets/leetcode.png" alt="LeetCode" class="project-image">
+                <h3>LeetCode</h3>
+                <p>Description of LeetCode Solutions.</p>
+                <button class="project-button"
+                    onclick="window.open('https://github.com/tuanton013/Tuan-s-Project/tree/main/Pygame/Hangman')">View
+                    Project</button>
+            </div>
+        </div>
+        <img src="./assets/down-arrow.png" alt="Arrow icon" class="icon-arrow" onclick="location.href='#contact'">
+    </section>
+
+    <section id="contact">
+        <h2 class="contact-title">Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p>Feel free to reach out to me through any of the following channels:</p>
+                <div class="contact-links">
+                    <a href="mailto:tonthattuanst@gmail.com" class="contact-link">
+                        <span>Email: tonthattuanst@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tuan-ton-219820250/" target="_blank" class="contact-link">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/tuanton013" target="_blank" class="contact-link">
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
